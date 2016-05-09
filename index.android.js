@@ -16,9 +16,6 @@ import {
   AsyncStorage
 } from 'react-native';
 
-
-React.createClass
-
 var ToDo = React.createClass ({
   
   addToDo: function(oEvent){
