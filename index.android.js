@@ -22,7 +22,7 @@ var ToDo = React.createClass ({
     var oDataSource = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this._toDoList.push(oEvent.nativeEvent.text);
     this.setState({dataSource: oDataSource.cloneWithRows(this._toDoList)});
-    AsyncStorage.setItem("todoItems", JSON.stringify(this._toDoList));
+    AsyncStorage.setItem("toDoItems", JSON.stringify(this._toDoList));
 
   },
   
